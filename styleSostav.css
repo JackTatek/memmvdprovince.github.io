@@ -1,7 +1,7 @@
+
 body {
 	background-color: #f0f0f0;
 }
-
 nav {
   text-align: center;
   padding: 40px 0 0;
@@ -30,6 +30,7 @@ nav a {
   letter-spacing: 3px;
   color:white;
     font-family: 'monospace', cursive;
+	
 }
 .topmenu > li > a:before {
   content: "";
