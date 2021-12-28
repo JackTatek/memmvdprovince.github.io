@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<title>[ЧС] memfractionstaff</title>
+	<link rel="stylesheet" href="styleCHS.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="icon" href="images\logo1.ico" type="image/x-icon">
+<head>
+<nav>
+  <ul class="topmenu">
+  <li><a href="News.html">Новости</a></li>
+        <li><a href="ZP.html" class="down">Зарплата</a>
+      <ul class="submenu">
+        <li><a href="ZP_Prem.html">Премии</a></li>
+      </ul>
+    <li><a href="CHS.html" class="down">Черный список</a>
+      <ul class="submenu">
+        <li><a href="-">Внесение в ЧС</a></li>
+        <li><a href="-">Удаление из ЧС</a></li>
+        <li><a href="CHS.html">Просмотр ЧС</a></li>
+      </ul>
+    </li>
+    <li><a href="Pravila.html" class="down">Правила и обязанности</a>
+      <ul class="submenu">
+        <li><a href="Obyazannosti.html">Обязанности по должностям</a></li>
+		
+      </ul>
+    </li>
+    <li><a href="Sostav.html">Состав</a></li>
+  </ul>
+</nav>
+</head>
+<hr>
+<body>
+<style>
+					.row {
+					margin-top: 20px;
+						}
+					</style>	
+        <div class="row">
+            <div class="container">
+                <div class="form-group">
+                    <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Введите данные">
+					<style>
+					.pull-right {
+					float: left!important;
+						}
+					</style>
+                </div>
+                <br>
+                <table class="table table-striped" id="mytable" cellspacing="0" style="width: 100%;">
+                    <thead>
+                        <tr role="row">
+                            <th>Имя и Фамилия</th>                          
+                            <th>ID страницы</th> 	 						
+                            <th>Причина</th>
+							<th>От</th>
+                            <th>До</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>13.12.2021</td>
+                            <td>12.12.2022</td>
+							<br>
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022<br></td>
+							
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+						<tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+						<tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+						<tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+						<tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>123456</td>
+                            <td>Причина</td>
+                            <td>12.12.2021</td>
+                            <td>12.12.2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $("#search").keyup(function(){
+                _this = this;
+                $.each($("#mytable tbody tr"), function() {
+                    if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                       $(this).hide();
+                    else
+                       $(this).show();                
+                });
+            });
+        });
+        </script>
+    </body>
+	<footer>
+<pre style="background-color: #4682B4 ">
+
+©Мемы фракций 2022 - все права защищены.
+
+</pre>
+ </footer>
+</html>
